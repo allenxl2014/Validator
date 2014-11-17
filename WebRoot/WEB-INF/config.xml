@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CTConfig ID="20040622000000">
+
+	<!-- 请求相关配置 -->
+	<Request>
+		<!-- 最大所有请求内容长度，单位：K，默认：700K， 值设置为0或不指定，无限制 -->
+		<MaxRequestContentLength>0</MaxRequestContentLength>
+	</Request>
+
+	<!-- 用户会话配置 -->
+	<Session>
+		<!-- 会话时间设置，单位：分钟,默认30 -->
+		<MaxInactiveInterval>20</MaxInactiveInterval>
+	</Session>
+
+
+
+	<!-- 调试器配制 -->
+	<Debugger>
+		<Switch>ON</Switch> <!-- ON = 开, OFF = 关 -->
+	</Debugger>
+
+	<!-- 分页信息配制 -->
+	<Pagination>
+		<!-- 设置每页行数 -->
+		<PageRowSize>20</PageRowSize>
+	</Pagination>
+
+	<!-- 文档相关配置 -->
+	<Document>
+		<!-- 存储文件的根路径 -->
+		<Root>c:\school\pic\</Root>
+		<Path>http://127.0.0.1/pic/</Path>
+		<!-- 限制上传文件大小 -->
+		<MaxDocumentSize>
+			<!-- 最大单个文件内容长度，单位：K，默认：512K，值设置为0或不指定，无限制 -->
+			<MaxRequestFileContentLength>1024</MaxRequestFileContentLength>
+		</MaxDocumentSize>
+	</Document>
+
+</CTConfig>
+
+
